@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg_main">
+    
+    <org.mozilla.geckoview.GeckoView android:id="@+id/geckoView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/bg_main">
+        
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp" android:background="@color/bg_surface">
+            <!-- 设置 Token 按钮 -->
+            <TextView android:id="@+id/btnSetToken" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_centerVertical="true" android:text="设置Token" android:textColor="#00E5FF" android:padding="16dp" android:textSize="14sp"/>
+            
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="CYBER DEEP" android:textColor="#00E5FF" android:textSize="16sp" android:textStyle="bold"/>
+            
+            <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:text="初始化" android:textColor="#64748B" android:padding="12dp" android:textSize="12sp"/>
+        </RelativeLayout>
+        
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="16dp"/>
+        
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="12dp" android:background="@color/bg_surface">
+            <EditText android:id="@+id/etInput" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="#1E293B" android:hint="输入指令..." android:textColor="#FFF" android:padding="12dp" />
+            <ImageButton android:id="@+id/btnSend" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="8dp" android:background="@drawable/bg_send_button" android:src="@android:drawable/ic_menu_send" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

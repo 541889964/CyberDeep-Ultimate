@@ -1,0 +1,5 @@
+<resources>
+    <color name="bg_main">#050510</color>
+    <color name="bg_surface">#0F172A</color>
+    <color name="bubble_ai">#1E293B</color>
+</resources>
